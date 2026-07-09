@@ -2,10 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+/* Navbar Section */
+
  .logo img {
     width: 120px;
     max-width: 100%;
     height: auto;
+}
+
+.page_container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
 }
 
 nav {
@@ -13,8 +22,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5px;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .nav_links ul {
@@ -30,10 +37,44 @@ nav {
 }
 
 button.regester_btn {
-    padding: 10px 20px;
+    font-size: 16px;
+    padding: 15px 20px;
     background-color: #1d4ed8;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 170px;
+}
+
+/* Banner (Hero) Section */
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('./assets/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 720px;
+    color: white;
+}
+
+.banner_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.banner_content div h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.banner_content div p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+    padding-top: 20px;
 }
