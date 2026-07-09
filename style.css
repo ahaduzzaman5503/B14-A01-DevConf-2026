@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ .logo img {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav_links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav_links ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+button.regester_btn {
+    padding: 10px 20px;
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
