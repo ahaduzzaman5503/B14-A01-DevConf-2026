@@ -1,122 +1,214 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navbar Section */
 
- .logo img {
-    width: 120px;
-    max-width: 100%;
-    height: auto;
+.logo img {
+  width: 120px;
+  max-width: 100%;
+  height: auto;
 }
 
 .page_container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 10px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5px;
 }
 
 .nav_links ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 .nav_links ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 button.regester_btn {
-    font-size: 16px;
-    padding: 15px 20px;
-    background-color: #1d4ed8;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 170px;
+  font-size: 16px;
+  padding: 15px 20px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 170px;
 }
 
 /* Banner (Hero) Section */
 
 .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('./assets/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 720px;
-    color: white;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./assets/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 720px;
+  color: white;
 }
 
 .banner_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  text-align: center;
 }
 
 .banner_content div h1 {
-    font-size: 50px;
-    font-weight: 700;
+  font-size: 50px;
+  font-weight: 700;
 }
 .banner_content div p {
-    font-size: 18px;
-    max-width: 600px;
-    line-height: 1.6;
-    padding-top: 20px;
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.6;
+  padding-top: 20px;
 }
 
 /* Meet the Speakers Section */
 
 .speakers h1 {
-    text-align: center;
-    font-size: 50px;
-    padding: 30px;
+  text-align: center;
+  font-size: 50px;
+  padding: 30px;
 }
 
 .card_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    padding: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 30px 0;
 }
 
 .card {
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .card_text {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 20px;
 }
 
 .card_text h4 {
-    color: #2563eb;
+  color: #2563eb;
 }
 .card_text p {
-    font-weight: 100;
-    color: rgb(87, 87, 87);
+  font-weight: 100;
+  color: rgb(87, 87, 87);
+}
+
+/* Secure Your Spot (Pricing) Section */
+
+.pricing_container {
+  padding: 30px 20px;
+}
+
+.spot_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.pricing_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 30px 0px;
+}
+
+#custom_bg_color {
+    background-color: #0D1B2A;
+    color: white;
+    
+}
+.pricing_single_card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  border: none;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card_top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_top h1 {
+    font-size: 50px;
+}
+
+.hr_line {
+    width: 100%;
+    height: 0.3px;
+    color: gray;
+    background-color: gray;
+    opacity: 30%;
+}
+
+.standard_btn {
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #2563eb;
+}
+.pro_btn {
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+}
+.team_btn {
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.service_list ul li {
+  line-height: 35px;
+  margin-left: 20px;
+}
+
+.service_list ul li::marker {
+  color: #2563eb;
+  font-size: 20px;
 }
