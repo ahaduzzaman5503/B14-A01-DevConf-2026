@@ -219,7 +219,7 @@ button.regester_btn {
 
 /* Footer Section */
 .footer_bg {
-  background-color: #0d1b2a;
+  background-color: #1a5799;
 }
 
 .footer_logo {
@@ -259,4 +259,134 @@ button.regester_btn {
   list-style-type: none;
   font-size: 18px;
   gap: 20px;
+}
+
+/* PLACEHOLDER SECTION — AI CHALLENGE */
+
+/*==========================
+    Conference Tracks
+==========================*/
+
+.tracks {
+    padding: 100px 0;
+    background: #0f172a;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section_heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section_heading h2 {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.section_heading p {
+    color: #94a3b8;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.tracks_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.track_card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 35px 30px;
+    transition: all .35s ease;
+}
+
+.track_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+    border-color: #3b82f6;
+}
+
+.track_icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(59,130,246,.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    transition: .35s;
+}
+
+.track_card:hover .track_icon {
+    transform: scale(1.15);
+}
+
+.track_icon i {
+    font-size: 30px;
+    color: #3b82f6;
+}
+
+.track_card h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.track_card p {
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.badge {
+    display: inline-block;
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*==========================
+    Responsive
+==========================*/
+
+@media (max-width: 992px) {
+
+    .tracks_container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .tracks {
+        padding: 70px 0;
+    }
+
+    .section_heading h2 {
+        font-size: 34px;
+    }
+
+    .tracks_container {
+        grid-template-columns: 1fr;
+    }
+
+    .track_card {
+        padding: 30px 25px;
+    }
+
 }
