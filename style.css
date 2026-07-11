@@ -51,7 +51,7 @@ button.regester_btn {
 
 .banner {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/banner.jpg");
   background-size: cover;
   background-position: center;
@@ -113,7 +113,7 @@ button.regester_btn {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 .card_text h4 {
